@@ -1,0 +1,145 @@
+.button_submit{
+    position: absolute;
+    width: 135px;
+    height: 29px;
+    left: 1311px;
+    top: 4733px;
+    
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 100.4%;
+    /* or 30px */
+    
+    letter-spacing: 0.1em;
+    
+    /* preto */
+    
+    color: #28201A;
+      
+}
+
+.paragrafo{
+    margin: 0px 0px 0px;
+}
+
+.button_navbar{
+    align-items: center;
+    white-space: nowrap;
+    
+    max-width: 0px 0px 0px;
+    border-radius: 5px;
+
+    color: #0167B1;
+    border: 0.5px solid #0167B1;
+    
+    
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;    
+    line-height: 24px;
+}
+
+#id_1{
+    /* Quem somos */
+
+    position: absolute;
+    width: 142px;
+    height: 18px;
+    left: 830px;
+    top: 28px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0167B1;
+
+    border: 0.5px solid #0167B1;
+}
+#id_2{
+    /* O que fazemos */
+
+    position: absolute;
+    width: 165px;
+    height: 25px;
+    left: 987px;
+    top: 30px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0167B1;
+
+    border: 0.5px solid #0167B1;
+
+}
+#id_3{
+    /* Nossos parceiros */
+
+    position: absolute;
+    width: 183px;
+    height: 34px;
+    left: 1167px;
+    top: 28px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0167B1;
+
+    border: 0.5px solid #0167B1;
+}
+#id_4{
+   /* Seja voluntário */
+
+    position: absolute;
+    width: 143px;
+    height: 24px;
+    left: 1365px;
+    top: 29px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #0167B1;
+
+    border: 0.5px solid #0167B1;
+
+
+}
+#id_5{
+    /* Contato */
+
+    position: absolute;
+    width: 86px;
+    height: 25px;
+    left: 1523px;
+    top: 29px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0167B1;
+
+    border: 0.5px solid #0167B1;
+
+
+}
