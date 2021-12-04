@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.card .image-big {
+    position: absolute;
+    width: 435px;
+    height: 270px;
+    left: 1204px;
+    top: 1711px;
+
+    background: #DDDDDD;
+    border-radius: 30px;
+}
+
+.card .image-small{
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    left: 734px;
+    top: 3221px;
+
+    background: url(image.png);
+    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+}
+
+.card .image-carousel{
+    position: absolute;
+    width: 426px;
+    height: 450px;
+    left: 608px;
+    top: 2341px;
+
+    background: url(image.png);
+    border-radius: 30px;
+}
+
+.card .card-text{
+    position: absolute;
+    width: 525px;
+    height: 287px;
+    left: 418px;
+    top: 4530px;
+
+    background: #FFFFFF;
+    box-shadow: 4.55455px 4.55455px 34.1591px rgba(0, 0, 0, 0.25);
+    border-radius: 34.1591px;
+}
+
+.card .card-text .title{
+    position: absolute;
+    width: 461px;
+    height: 52px;
+    left: 450px;
+    top: 4549px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+
+    border: 0.5px solid #000000;
+}
+
+.card .card-text .description{
+    position: absolute;
+    width: 510px;
+    height: 179px;
+    left: 414px;
+    top: 4612px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
