@@ -27,6 +27,7 @@
 }
 
 .button_navbar{
+    
     align-items: center;
     white-space: nowrap;
     
@@ -142,6 +143,4 @@
     color: #0167B1;
 
     border: 0.5px solid #0167B1;
-
-
 }
