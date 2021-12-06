@@ -5,10 +5,10 @@ import './style.css';
 function FoterComponent() {
     return(
         <>
-        <div className="footer">
-            <footer>
-                <div className="rectangle"></div>
+        <div className="box">
+            <footer className="footer">
                 <div className= "vector"></div>
+                <div className="rectangle"></div>
 
                 <div className="text" id="arrecad">
                     <p className="paragrafo">Recebemos doações de cestas básicas de alimentos e produtos de limpeza.</p>

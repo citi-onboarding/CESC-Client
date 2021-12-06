@@ -1,40 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+.box{
+    width: 933px;
+    height: 1280px;
+}
+
 .footer{
-   
-    position: absolute;
-    width: 2054px;
-    height: 517px;
-    left: 0px;
-    top: 5145px;
-    bottom: 0px;
-
-}
-.rectangle{
-
     z-index: 1;
-    background-image: url('rectangle.svg');
-    background-position: top;
-
-    position: absolute;
-    width: 2054px;
-    height: 250px;
-    left: 0px;
-
+    width: 100%;
+    height: 200px;
+    position: fixed;
     bottom: 0px;
-
 }
+
 .vector{
    
     z-index: 1;
-    background-image: url('Vector.svg');
-    position: absolute;
-    width: 2054px;
-    height: 267px;
-    left: 0px;
-    
-    bottom: 250px;
+    background-image: url('../../assets/vectorpaint.png');
+    width: 100%;
+    height: 120px;
 }
+
+.rectangle{
+
+    z-index: 1;
+    background-image: url('../../assets/rectanglepaint.png');
+    width: 100%;
+    height: 200px;
+}
+    
+
 
 .paragrafo{
 
@@ -45,12 +40,11 @@
     
     /* Recebemos doações de cestas básicas de alimentos e produtos de limpeza. Pix ou transferência bancária Pix Celular - 81 9 88385780 */
     z-index: 2;
-    position: absolute;
+    
     width: 445px;
     height: 174px;
-    left: 1122px;
-    top: 149px;
-
+    left: 30%;
+    bottom: 30%;
     font-family: Varela Round;
     font-style: normal;
     font-weight: normal;
@@ -64,13 +58,13 @@
 #arrecad_image{
 
     z-index: 3;
-    position: absolute;
+   
     width: 60px;
     height: 60px;
     left: 1072px;
     top: 180px;
 
-    background: url('heart1.svg');
+    background: url('../../assets/heart1.svg');
 }
 
 #endereco{
@@ -78,7 +72,7 @@
     /* Endereço: Rua Caripós, 372 -Coqueiral CEP: 50791120 */
     z-index: 2;
     text-align: left;
-    position: absolute;
+   
     width: 555px;
     height: 120px;
     left: 437px;
@@ -98,20 +92,20 @@
 
     /* place 2 */
     z-index: 2;
-    position: absolute;
+   
     width: 60px;
     height: 60px;
     left: 487px;
     top: 172px;
 
-    background-image: url('place2.svg');
+    background-image: url('../../assets/place2.svg');
 }
 
 #whatsapp{
 
     /* Endereço: Rua Caripós, 372 -Coqueiral CEP: 50791120 */
     z-index: 2;
-    position: absolute;
+   
     width: 230px;
     height: 100px;
     left: 723px;
@@ -130,20 +124,20 @@
 
     /* whatsapp 1 */
     z-index: 2;
-    position: absolute;
+   
     width: 60px;
     height: 60px;
     left: 703px;
     top: 275px;
 
-    background-image: url('whatsapp1.svg');
+    background-image: url('../../assets/whatsapp1.svg');
 }
 
 #instagram{
 
     /* cesc_coqueiral */
     z-index: 2;
-    position: absolute;
+  
     width: 226px;
     height: 51px;
     left: 507px;
@@ -162,13 +156,13 @@
 
     /* instagram 1 */
     z-index: 2;
-    position: absolute;
+    
     width: 60px;
     height: 60px;
     left: 487px;
     top: 272px;
 
-    background: url(instagram1.svg);
+    background: url('../../assets/instagram1.svg');
 }
 
 .citi{
