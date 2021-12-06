@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.css';
 
-function ButtonComponent ({className, title, id, f_click}) {
+function ButtonComponent (props) {
     return (
         <>
-            <button id={id} className={className} onClick={f_click}>
-                    <p className="paragrafo">{title}</p> 
+            <button  className={`${props.classButton}`} onClick={props.onClick}>
+                    <p>{props.title}</p> 
             </button>
         </>  
     )

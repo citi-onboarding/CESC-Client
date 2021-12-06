@@ -5,21 +5,19 @@ import ButtonComponent from './Components/ButtonComponent/ButtonComponent';
 const App = () => {
   return (
     <>
-      <ButtonComponent className = "button_submit" title="Enviar"/>     
-      <div className="B_navbar">
-        <ButtonComponent id ="id_1" className = "button_navbar" title="Quem somos"/>
-          
-        <ButtonComponent id ="id_2" className = "button_navbar" title="O que fazemos"/>
-          
-        <ButtonComponent id ="id_3" className = "button_navbar" title="Nossos parceiros"/>
-      
-        <ButtonComponent id ="id_4" className = "button_navbar" title="Seja voluntário"/>
+      <div className="">
+          <ButtonComponent title="Quem somos" classButton="button_navbar" />
+          <ButtonComponent title="O que fazemos" classButton="button_navbar"/>
+          <ButtonComponent title="Nossos parceiros" classButton="button_navbar"/>
+          <ButtonComponent title="Seja voluntário" classButton="button_navbar"/>
+          <ButtonComponent title="Contato" classButton="button_navbar"/>
+      </div>
 
-        <ButtonComponent id ="id_5" className = "button_navbar" title="Contato"/>
+      <div>
+        <ButtonComponent title="Enviar" classButton="button_submit"/>
       </div>
     </>
 )
 }
-
 
 export default App;
