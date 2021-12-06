@@ -1,23 +1,20 @@
 import React from 'react';  
 import './style.css';
 
-function card (props) {
+function Card (props) {
     return(
         <div className = "card">
             
-            <img className="image-big"  src={ require(props.image-big).default }/>
-
-            <img className="image-small"  src={ require(props.image-small).default }/>
-
-            <img className="image-carousel"  src={ require(props.image-carousel).default }/>
-            
+            <img className= {`image${props.changeImage}`}src={props.image}/>
+           
             <div className = "card-text">
                 <h3 className="title"> {props.title} </h3>
                 <p className="description"> {props.description} </p>
+
             </div>
             
         </div>
     );
 }
 
-export default card;
+export default Card;
