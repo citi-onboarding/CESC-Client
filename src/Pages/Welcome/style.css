@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.welcome {
+    position: relative;
+    background-color: white;
+    font-family: "Valera Round";
+}
+
+h1 {
+    color: #0167B1;
+    size: 60px;
+    line-height: 72px;
+}
+
+.img-back{
+    position: absolute;
+}
+
+.img-front{
+    position: absolute;
+}
