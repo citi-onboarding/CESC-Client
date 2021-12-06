@@ -1,25 +1,23 @@
 import React from 'react';
-import { Logo } from '../src/assets'
 import './style.css';
+import ButtonComponent from './Components/ButtonComponent/ButtonComponent';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
+      <div className="">
+          <ButtonComponent title="Quem somos" classButton="button_navbar" />
+          <ButtonComponent title="O que fazemos" classButton="button_navbar"/>
+          <ButtonComponent title="Nossos parceiros" classButton="button_navbar"/>
+          <ButtonComponent title="Seja voluntário" classButton="button_navbar"/>
+          <ButtonComponent title="Contato" classButton="button_navbar"/>
+      </div>
 
-      <img src={Logo} alt="" />
-      <p>
-        Made with
-        {' '}
-        <strong>&lt; &#x0002F; &gt;</strong>
-        {' '}
-        and
-        {' '}
-        <strong>&hearts;</strong>
-        {' '}
-        by CITi
-      </p>
-  </div>
+      <div>
+        <ButtonComponent title="Enviar" classButton="button_submit"/>
+      </div>
+    </>
 )
-  }
+}
 
 export default App;
