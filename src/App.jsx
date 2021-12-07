@@ -1,23 +1,17 @@
 import React from 'react';
+import { Logo } from '../src/assets'
 import './style.css';
-import ButtonComponent from './Components/ButtonComponent/ButtonComponent';
+import {Card} from "./Components"
+import NavBar from './Pages/NavBar/navbar';
+import { navbarpicture } from '../src/assets';
 
 const App = () => {
   return (
-    <>
-      <div className="">
-          <ButtonComponent title="Quem somos" classButton="button_navbar" />
-          <ButtonComponent title="O que fazemos" classButton="button_navbar"/>
-          <ButtonComponent title="Nossos parceiros" classButton="button_navbar"/>
-          <ButtonComponent title="Seja voluntário" classButton="button_navbar"/>
-          <ButtonComponent title="Contato" classButton="button_navbar"/>
-      </div>
-
-      <div>
-        <ButtonComponent title="Enviar" classButton="button_submit"/>
-      </div>
-    </>
+    <div className="App">
+      <NavBar src={ navbarpicture }/>
+      
+    </div>
 )
-}
+  }
 
 export default App;
