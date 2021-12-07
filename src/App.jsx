@@ -8,7 +8,7 @@ import { navbarpicture } from '../src/assets';
 const App = () => {
   return (
     <div className="App">
-      <NavBar src={ navbarpicture }/>
+    
       
     </div>
 )
