@@ -1,6 +1,2 @@
-import Logo from './logo.png';
-
-export {
-  Logo,
-  ima
-};
+export { default as greenstain} from './greenstain.svg';
+export { default as kidspainting } from './kidspainting.svg';

@@ -1,21 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 .welcome {
+    display: flex;
+    flex-direction: row;
     position: relative;
     background-color: white;
     font-family: "Valera Round";
+    align-items: center;
 }
 
 h1 {
     color: #0167B1;
-    size: 60px;
-    line-height: 72px;
+    size: 40px;
+    line-height: 60px;
+    max-width: 600px;
+    font-size: 50px;
+    padding-left: 8rem;
+    text-align: left;
+    z-index: 0;
+    width: 900px;
+    height: 200px;
+    
 }
-
+.image{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    z-index: 1;
+}
 .img-back{
     position: absolute;
+    z-index: 0;
+    width: 500px;
+    height: 550px;
 }
 
 .img-front{
     position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 650px;
 }

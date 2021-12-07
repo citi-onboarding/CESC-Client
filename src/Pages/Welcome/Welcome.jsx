@@ -1,6 +1,6 @@
 import React from 'react';  
-import image1 from "./assets";
-import image2 from "./assets";
+import { greenstain } from '../../assets/index';
+import { kidspainting } from '../../assets/index';
 import './style.css';
 
 function Welcome(){
@@ -10,8 +10,8 @@ function Welcome(){
             Resgatando Cultura,<br/>
             Arte e Cidadania</h1>
             <div className = "images">
-                <img className= "img-back" src={image1}></img>
-                <img className= "img-front"src={image2}></img>
+                <img className= "img-back" src={greenstain}></img>
+                <img className= "img-front"src={kidspainting}></img>
             </div>
         </div>
     )
