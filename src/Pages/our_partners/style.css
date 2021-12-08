@@ -11,14 +11,13 @@
 }
 
 .parceiros{
-  
    width:  185px;
    height:  185px;
 }
 
 h2 {
     font-size: 30px;
-    font-family: "Varela Round" ;
+    font-family: "Varela Round", sans-serif;
     color: #0167B1;
     text-align: center;
     padding-bottom: 50px;

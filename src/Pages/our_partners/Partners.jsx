@@ -1,28 +1,72 @@
 import React from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import './style.css';
 import '../../Components/card/card';
 import Card from '../../Components/card/card';
 
-function OurPartners(props) {
+function OurPartners() {
+    const [infos, setInfos] = useState([])
+
+    const getInfos = async () => {
+        const res = await axios.get('http://localhost:1337/parceiros')
+        const {data} = res
+        setInfos(data)
+        console.log(data)
+    }
+    useEffect(() => {
+        getInfos();
+    }, [])
+
     return(
         <>
-        
-        <div className='container'>
-            <h2>{props.title}</h2>
-            <div className='box'>
-                <div className="parceiros"><Card image='Logo.svg' /></div> 
-                <div className="parceiros"><Card image='Logo1.svg' /></div> 
-                <div className="parceiros"><Card image='Logo2.svg' /></div> 
-                <div className="parceiros"><Card image='Log3.svg' /></div> 
-                <div className="parceiros"><Card image='Logo4.svg' /></div> 
-                <div className="parceiros"><Card image='Logo5.svg' /></div> 
-                <div className="parceiros"><Card image='img.svg' /></div> 
-                <div className="parceiros"><Card image='img.svg' /></div> 
-                <div className="parceiros"><Card image='img.svg' /></div> 
-                <div className="parceiros"><Card image='img.svg' /></div> 
-            </div>
-        </div>    
-       
+            <div className='container'>
+                <h2>Conheça nossos parceiros</h2>
+                <div className='box'> 
+                    <>
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[0]?.image.url} />
+                        </div>
+                        
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[1]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[2]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[3]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[4]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[5]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[6]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[7]?.image.url} />
+                        </div> 
+
+                        <div className="parceiros">
+                            <Card changeImage ='image' changeText='' image={infos[8]?.image.url} />
+                        </div> 
+                        
+                        <div className="parceiros">
+
+                            <Card changeImage ='image' changeText='' image={infos[9]?.image.url} />
+                        </div> 
+                    </>
+                </div>
+            </div>    
         </>
     ) 
 }
