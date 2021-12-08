@@ -1,186 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-.text{
+
+p {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'Valera Round';
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 260px 180px;
+    width: 100%;
+    height: 400px;
+    bottom: 0px;
+}
+
+.onda{  
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+    justify-content: space-around;
+    background-image: url('../../assets/vector.svg');
+    width: 100%;
+    height: 260px;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    width: 440px;
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.img_endereco{
+    background-image: url('../../assets/place2.svg');
+    width: 60px;
+    height: 60px;
+}
+
+.text_endereco{
+    width: 340px;
+    height: 80px;
+    margin-top: 0px;
+}
+.arrecad{
+    display: grid;
+    grid-template-columns: 60px 360px;
+    justify-content: space-around;
+    width: 440px;
+    height: 120px;
+    align-items: initial;
+    margin-bottom: 50px;
+}
+
+.text_arrecad{
+    width: 360px;
+    height: 200px;
+    text-align: center;
     margin-top: 0px;
 }
 
-#footer{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 350px;
-    bottom: 0px;
-    left: 0px;
+.img_arrecad{
+    background-image: url('../../assets/heart1.svg');
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 50px;
 }
 
 
+#text{
+    margin: 0px 0px 0px;
+    font-family: 'Valera Round';
+    font-size: 20px;
+    color: #FFFFFF;
+}
 
-#vector{
-   
-    z-index: 1;
-    background-image: url('../../assets/vector.svg');
-    position: fixed;
+
+    
+
+.retangulo{
+    background-image: url('../../assets/rectangle.svg');
+    display: grid;
+    grid-template-columns: 500px 270px;
+    justify-content: space-around;
     width: 100%;
     height: 200px;
-    bottom: 150px;
-}
-
-#rectangle{
-
-    z-index: 1;
-    background-image: url('../../assets/rectangle.svg');
-    position: inherit;
-    width: 100%;
-    height: 150px;
-    bottom: 0px;
-}
-
-#arrecad{
     
-    /* Recebemos doações de cestas básicas de alimentos e produtos de limpeza. Pix ou transferência bancária Pix Celular - 81 9 88385780 */
-    z-index: 2;
-    position: inherit;
-    width: 445px;
-    height: 174px;
-    left: 1200px;
-    bottom: 60px;
-    font-family: 'Varela Round';
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-    color: #FFFFFF;
 }
 
-#arrecad_image{
+.insta_zap{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: space-between;
+    height: 200px;
+    align-items: flex-start;
+}
 
-    z-index: 3;
-    position: inherit;
-    left: 1167px;
-    bottom: 150px;
+.citi{
+    height: 40px;
+    align-items: flex-end;
+    align-items: bottom;
+    
+}
+
+
+
+.instagram{
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    width: 200px;
+    height: 90px;
+}
+
+.img_instagram{
+    background-image: url('../../assets/instagram1.svg');
     width: 60px;
     height: 60px;
-   
 
-    background: url('../../assets/heart1.svg');
+}
+.text_instagram{
+    width: 150px;
+    height: 80px;
+    margin-top: 0px;
 }
 
-#endereco{
-
-    /* Endereço: Rua Caripós, 372 -Coqueiral CEP: 50791120 */
-    z-index: 2;
-    text-align: left;
-   
-    
-    position: inherit;
-    width: 555px;
-    height: 120px;
-    left: 360px;
-    bottom: 105px;
-
-    
-    font-family: Varela Round;
-    font-size: 40px;
-
-    color: #FFFFFF;
+.whatsapp{
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    width: 200px;
+    height: 90px;
+    margin-top: 0px;
 }
 
-#endereco_image{
-
-    /* place 2 */
-    z-index: 2;
-    position: inherit;
-    left: 390px;
-    bottom: 140px;
-    width: 60px;
-    height: 60px;
-  
-
-    background-image: url('../../assets/place2.svg');
-}
-
-#whatsapp{
-
-    /* Endereço: Rua Caripós, 372 -Coqueiral CEP: 50791120 */
-    z-index: 2;
-
-    position: inherit;
-    left: 635px;
-    bottom: 30px;
-    width: 230px;
-    height: 100px;
-    
-
-    font-family: Varela Round;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-
-    color: #FFFFFF;
-}
-
-#whatsapp_image{
-
-    /* whatsapp 1 */
-    z-index: 2;
-    position: inherit;
-    left: 620px;
-    bottom: 50px;
-    width: 60px;
-    height: 60px;
-   
+.img_whatsapp{
     background-image: url('../../assets/whatsapp1.svg');
-}
-
-#instagram{
-
-    /* cesc_coqueiral */
-    z-index: 2;
-  
-    
-    position: inherit;
-    left: 415px;
-    bottom: 55px;
-    width: 226px;
-    height: 51px;
-
-    font-family: Varela Round;
-
-    font-size: 30px;
-    line-height: 36px;
-
-    color: #FFFFFF;
-}
-
-#instagram_image{
-
-    /* instagram 1 */
-    z-index: 2;
-    
-    position: inherit;
-    left: 390px;
-    bottom: 50px;
     width: 60px;
     height: 60px;
-    
-    background: url('../../assets/instagram1.svg');
 }
 
-#citi{
-
-    /* Feito com e </> pelo CITi */
-    z-index: 2;
-    position: inherit;
-    width: 405px;
-    height: 107px;
-    left: 1470px;
-    bottom: -20px;
-    
-    font-family: Varela Round;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-
-    color: #FFFFFF;
+.text_whatsapp{
+    width: 140px;
+    height: 80px;
+    margin-top: 0px;
 }
