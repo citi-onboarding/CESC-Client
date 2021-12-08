@@ -1,10 +1,8 @@
 
 export { default as SectionComponent } from './SectionComponent'
 export { default as ButtonComponent } from './ButtonComponent'
-export { default as Card } from './Card';
+export { default as Card } from './card';
 
-import ButtonComponent from "./ButtonComponent/ButtonComponent";
 
-export default ButtonComponent;
 
 
