@@ -6,7 +6,7 @@ function FooterComponent() {
     return(
         <>
             <footer id="footer">
-                       <div className='onda'>
+                       <div className='vector'>
                            <div className='endereco'>
                                 <div className='img_endereco'>
                                     <img src='../../assets/place2.svg' alt="" /> 
@@ -30,8 +30,8 @@ function FooterComponent() {
                             </div>    
                         </div>
 
-                        <div className='retangulo'>
-                            <div className='insta_zap'>
+                        <div className='rectangle'>
+                            <div className='instagram_whatsapp'>
                                 <div className='instagram'>
                                     <div className='img_instagram'>
                                         <img src='../../assets/instagram1.svg' alt="" /> 
@@ -52,7 +52,7 @@ function FooterComponent() {
                             </div>
 
                             <div className='citi'>
-                                <p>
+                                <p id='text'>
                                     Made with
                                     {' '}
                                     <strong>&lt; &#x0002F; &gt;</strong>
