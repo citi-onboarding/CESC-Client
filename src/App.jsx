@@ -5,7 +5,7 @@ import './style.css';
 const App = () => {
   return (
     <div className="App">
-      
+      <OurPartners title='Conheça nossos parceiros'/>
     </div>
   )
 }
