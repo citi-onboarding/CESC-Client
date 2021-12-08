@@ -2,42 +2,49 @@
 
 .welcome {
     display: flex;
-    flex-direction: row;
     position: relative;
-    background-color: white;
-    font-family: "Valera Round";
+    background-color: #FFFFFF;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 801px;
+}
+.welcomeSection{
+    position: relative;
+    width: 100%;
 }
 
 h1 {
-    color: #0167B1;
-    size: 40px;
-    line-height: 60px;
-    max-width: 600px;
-    font-size: 50px;
-    padding-left: 8rem;
-    text-align: left;
-    z-index: 0;
-    width: 900px;
-    height: 200px;
-    
-}
-.image{
     position: absolute;
-    width: 500px;
-    height: 450px;
-    z-index: 1;
+    color: #0167B1;
+    line-height: 60px;
+    font-size: 50px;
+    text-align: left;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    left: 220px;
+    margin: 0px;
+    top: 119px;
+    
+
+}
+.images{
+    position: absolute;
+    left: 550px;
+    height: 459px;
+    width: 716px;
 }
 .img-back{
     position: absolute;
     z-index: 0;
-    width: 500px;
-    height: 550px;
+    height: 100%;
+    width: 100%;
+    left: 60px;
 }
 
 .img-front{
     position: absolute;
     z-index: 1;
-    width: 600px;
-    height: 650px;
+    height: 259px;
+    width: 616px;
 }

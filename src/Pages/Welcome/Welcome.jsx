@@ -6,12 +6,14 @@ import './style.css';
 function Welcome(){
     return(
         <div className= "welcome">
-            <h1>Transformando Vidas,<br/>
-            Resgatando Cultura,<br/>
-            Arte e Cidadania</h1>
-            <div className = "images">
-                <img className= "img-back" src={greenstain}></img>
-                <img className= "img-front"src={kidspainting}></img>
+            <div className = "welcomeSection">
+                <h1>Transformando Vidas,<br/>
+                Resgatando Cultura,<br/>
+                Arte e Cidadania</h1>
+                <div className = "images">
+                    <img className= "img-back" src={greenstain}></img>
+                    <img className= "img-front"src={kidspainting}></img>
+                </div>
             </div>
         </div>
     )
