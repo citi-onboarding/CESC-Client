@@ -1,4 +1,5 @@
 import React from 'react';
+import OurPartners from './Pages';
 import './style.css';
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className="App">
       
     </div>
-import ButtonComponent from './Components/ButtonComponent/ButtonComponent';
+  )
+}
 
 export default App;
