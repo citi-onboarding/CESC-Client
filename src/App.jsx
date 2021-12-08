@@ -1,11 +1,11 @@
 import React from 'react';
-import FoterComponent from './Pages/footer';
+import FooterComponent from './Pages/footer';
 import './style.css'
 
 const App = () => {
   return (
     <div className="App">
-        <FoterComponent />
+      
     </div>
 )
 }
