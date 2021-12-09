@@ -1,4 +1,4 @@
-import { default as ButtonComponent } from '../../Components'
+import { ButtonComponent } from '../../Components'
 import { navbarpicture } from '../../assets';
 import './style.css'
 

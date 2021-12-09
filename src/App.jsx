@@ -3,6 +3,7 @@ import { Logo } from '../src/assets'
 import './style.css';
 import {Card} from "./Components"
 import NavBar from './Pages/NavBar/navbar';
+import {Whoweare} from '../src/Pages/index';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <div className="App">
 
     <NavBar></NavBar>
+    <Whoweare></Whoweare>
       
     </div>
 )

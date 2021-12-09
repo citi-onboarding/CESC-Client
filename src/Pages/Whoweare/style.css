@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.WhoweareSection{
+    position: relative;
+    display: flexbox;
+    flex-direction: row;
+    font-family: "Valera Round", sans-serif;
+    width: 100%;
+    max-width: 950px;
+    left: 100px;
+}
+.imagewhoweare{
+    position: absolute;
+    top: 2150px;
+    left: -190px;
+    width: 300px;
+    height: 300px;
+}
+.imgwhoweare{
+    width: 100%;
+}
+.whoweare{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.titlewhoweare{
+    position: relative;
+    height: 10rem;
+    size: 25px;
+    
+}
+h1{
+    color: #0167B1;
+    font-weight: 800;  
+}
+
+.contentwhoweare{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+    
+}
+.SectionDefault , .invert{
+    height: 20rem;
+}

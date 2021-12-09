@@ -8,7 +8,7 @@ body {
 }
 
 .sectionDefault {
-
+    
     display:flex;
     flex-direction: row-reverse;
     text-align: start;
@@ -25,28 +25,27 @@ body {
 }
 
 .invert h2 {
-
+    margin-bottom: 2rem;
     text-align: end;
 
 } 
 
 .invert p {
-
+    
     text-align: end;
 }
 
 .content {
-
     display: flex;
     flex-direction: column;
-    width: 435px;
+    width: 100%;
     text-align: start;
     margin-right: 30px;
     margin-left: 30px;
 }
 
 
-.title {
+.titlesection {
 
     color:#0167B1;
     width: 435px;
@@ -55,6 +54,7 @@ body {
     font-family: 'Varela Round';
     font-weight: 400;
     font-size: 45px;
+    margin-bottom: 2rem;
 }
 
 .text {
