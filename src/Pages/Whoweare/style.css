@@ -11,7 +11,7 @@
 }
 .imagewhoweare{
     position: absolute;
-    top: 1180px;
+    top: 800px;
     left: -250px;
     width: 300px;
     height: 300px;
@@ -38,6 +38,7 @@ h1{
 }
 
 .contentwhoweare{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content:space-between;

@@ -9,15 +9,14 @@ import axios from "axios"
 function Whoweare (props) {
     return(
         <div className = "WhoweareSection">
-            
-            <div className = "imagewhoweare">
-                <img className='imgwhoweare' src = {whowearepicture}></img>
-            </div>
+                        
             <div className = "whoweare">
                 <div className='titlewhoweare'>
                     <h1>Quem Somos</h1>  
                 </div>
                 <div className='contentwhoweare' style={{height: "250px"}}>
+
+
                     <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
                         <div style= {{ height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
@@ -32,7 +31,10 @@ function Whoweare (props) {
                         <div style= {{height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
-                    </SectionComponent>                    
+                    </SectionComponent>    
+                    <div className = "imagewhoweare">
+                        <img className='imgwhoweare' src = {whowearepicture}></img>
+                    </div>                
                 </div>
                     
                 </div>
