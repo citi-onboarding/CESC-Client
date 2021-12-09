@@ -10,7 +10,9 @@ function Whoweare (props) {
      
     const [Whoweareinfos, setWhoweareInfos] = useState([])
     
-    const WhoweareInfos = async () =>{
+    console.log(Whoweareinfos)
+
+    async function loadWhoweareInfos () {
         const res = await axios.get("http://localhost:1337/quem-somos")
         const {data} = res;
         console.log(data)
@@ -30,22 +32,35 @@ function Whoweare (props) {
                 </div>
                 <div className='contentwhoweare' style={{height: "250px"}}>
 
-
-                    <SectionComponent titlesection = "title" text = "texto" section = "invert">
+                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
                         <div style= {{ height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
-                    </SectionComponent>    
-                    <SectionComponent titlesection = "titulo" text = "texto" section = "SectionDefault">
-                        <div style= {{height: "270px"}} >
+                    </SectionComponent>
+                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
+                        <div style= {{ height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
                     </SectionComponent>  
-                    <SectionComponent titlesection = "ttitulo" text = "texto" section = "invert">
-                        <div style= {{height: "270px"}} >
+                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
+                        <div style= {{ height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
-                    </SectionComponent>    
+                    </SectionComponent>                      
+                    {Whoweareinfos?.map(({image,title,description}) => (
+                        <SectionComponent titlesection = {title.id} text = {description.id} section = "SectionDefault">
+                            <div style= {{ height: "270px"}} >
+                                    <Card changeImage = "image" image = {image.id} />
+                            </div>
+                        </SectionComponent> 
+                    ))}  
+                    {Whoweareinfos?.map(({image,title,description}) => (
+                        <SectionComponent titlesection = {title.id} text = {description.id} section = "invert">
+                            <div style= {{ height: "270px"}} >
+                                    <Card changeImage = "image" image = {image.id} />
+                            </div>
+                        </SectionComponent> 
+                    ))}  
                     <div className = "imagewhoweare">
                         <img className='imgwhoweare' src = {whowearepicture}></img>
                     </div>                
