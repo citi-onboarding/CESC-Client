@@ -6,13 +6,19 @@ import './style.css'
 
 import { nextArrow } from '../../assets'
 import { prevArrow } from '../../assets'
+import { carouselDots } from "../../assets";
+import { Childrenone } from "../../assets";
+import { Childrentwo } from "../../assets";
+import { Childrenthree } from "../../assets";
+import { Childrenfour } from "../../assets";
+import { Childrenfive } from "../../assets";
+import { ChildrenStain } from "../../assets";
 
 import { SectionComponent } from "../../Components";
 import { Card } from "../../Components";
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
 
 
 function SampleNextArrow(props) {
@@ -23,6 +29,7 @@ function SampleNextArrow(props) {
         <div
           className={className}
           onClick={onClick}
+          style = {{width:'100px',left:'750px',top:'300px',}}
         >
           <img src = { nextArrow }></img>
         </div>
@@ -37,6 +44,7 @@ function SamplePrevArrow(props) {
         <div
           className={className}
           onClick={onClick}
+          style={{width:'100px',zIndex:'1',top:'300px'}}
         >
           <img src = { prevArrow }></img>
         </div>
@@ -70,7 +78,7 @@ function Carrossel () {
     }, [])
 
     const settingsCard = {
-        focusOnSelect: true,
+        className: "center",
         dots: true,
         infinite: true,
         speed: 500,
@@ -79,7 +87,20 @@ function Carrossel () {
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow />,
         centerMode:true,
-        centerPadding: '60px',
+        centerPadding: '164px',
+        customPaging: i => (
+          <div
+            style={{
+              width: "35px",
+              height:'35px',
+              alignItems:'center',
+              paddingLeft:'92px'
+            }}
+          >
+            <img src={carouselDots}/> 
+          </div>
+        )
+  
       };
 
       const settingsText = {
@@ -95,8 +116,13 @@ function Carrossel () {
 
       return (
         <>
-        <div className='container' style={{width:'100%',height:'100%'}}>
-            <div  className='maincard' style={{width:'980px',height:'450px',marginTop:'0',justifyContent:'space-between'}}>
+
+        <h1 className='fixed_title'>O que fazemos</h1>
+      
+        <div className='container' style={{width:'100%',height:'100%',position:'relative'}}>
+
+
+            <div  className='maincard' style={{width:'1200px',height:'450px',marginTop:'0',justifyContent:'space-between'}}>
                 <Slider {...settingsCard} className='cardSlider'
                  asNavFor={nav1}
                  ref={slider => (slider2 = slider)}
@@ -107,7 +133,7 @@ function Carrossel () {
                         <div className='cards' style={{width:'426px',height:'450px'}}>
                                 {image?.map(({url}) => (
                                     <div style={{width:'426px',height:'450px'}}>
-                                        <Card image={url} changeImage='image'></Card>
+                                        <Card image={url} changeImage='image' changeText=''></Card>
                                     </div>
                                 ))}
                         </div>
@@ -131,6 +157,12 @@ function Carrossel () {
                  </div>
             </div>
 
+            <img src={ChildrenStain} style={{width:'418px',position:'absolute',left:'1100px',top:'350px'}}/>
+            <img src={Childrenone} style={{position:'absolute',width:'161px',left:'1100px',top:'500px'}}/>
+            <img src={Childrentwo} style={{position:'absolute',width:'120px',left:'1200px',top:'350px'}}/>
+            <img src={Childrenthree} style={{position:'absolute',width:'125px',left:'1320px',top:'350px'}}/>
+            <img src={Childrenfour} style={{position:'absolute',width:'99px',left:'1270px',top:'520px'}}/>
+            <img src={Childrenfive} style={{position:'absolute',width:'101px',left:'1400px',top:'480px'}}/>
 
         </div>
         </>

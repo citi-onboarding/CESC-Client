@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+.fixed_title {
+
+    color:#0167B1;
+    padding-top: 80px;
+    font-size: 45px;
+    width:730px;
+    text-align: start;
+    font-family: 'Varela Round';
+}
+
 .text {
 
     display:flex;
@@ -56,6 +66,18 @@
 
 .slick-dots {
 
-    top: 600px;
-    left:40px;
+    top: 570px;
+    left:73px;
 }
+
+
+.card img {
+
+    width:426px;
+}
+
+
+
+
+
+
