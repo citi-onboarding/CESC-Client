@@ -23,7 +23,7 @@ header {
     border-radius: 0px 0px 30px 30px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
     display: flex;
-
+    flex-direction: row;
 }
 
 .logoname {
@@ -42,13 +42,12 @@ header {
 
 .title {
 
-    font-family: 'Varela Round';
+    font-family: 'Varela Round',sans-serif;
     font-size: 30px;
-    height:34px;
     color: #579F46;
     text-align: center;
-    margin: auto 0px;
     padding-left: 14.71px;
+    width: 231px;
 }
 
 .navbar ul {
@@ -58,7 +57,6 @@ header {
     margin:auto 0px;
     justify-content: space-between;
     width:779px;
-    margin-left:55px;
 }
 
 
