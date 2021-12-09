@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {Card, SectionComponent} from '../../Components'
-import { whowearepicture } from '../../assets';
+import  whowearepicture  from '../assets/whowearepicture.svg';
 import './style.css'
 import axios from "axios"
 
@@ -37,7 +37,7 @@ function Whoweare (props) {
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
                     </SectionComponent>
-                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
+                    <SectionComponent titlesection = "titulo" text = "texto" section = "SectionDefault">
                         <div style= {{ height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
@@ -47,23 +47,10 @@ function Whoweare (props) {
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
                     </SectionComponent>                      
-                    {Whoweareinfos?.map(({image,title,description}) => (
-                        <SectionComponent titlesection = {title.id} text = {description.id} section = "SectionDefault">
-                            <div style= {{ height: "270px"}} >
-                                    <Card changeImage = "image" image = {image.id} />
-                            </div>
-                        </SectionComponent> 
-                    ))}  
-                    {Whoweareinfos?.map(({image,title,description}) => (
-                        <SectionComponent titlesection = {title.id} text = {description.id} section = "invert">
-                            <div style= {{ height: "270px"}} >
-                                    <Card changeImage = "image" image = {image.id} />
-                            </div>
-                        </SectionComponent> 
-                    ))}  
-                    <div className = "imagewhoweare">
+                   
+                    {/* <div className = "imagewhoweare">
                         <img className='imgwhoweare' src = {whowearepicture}></img>
-                    </div>                
+                    </div> */}           
                 </div>
                     
                 </div>
