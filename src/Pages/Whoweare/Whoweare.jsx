@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Card, SectionComponent} from '../../Components'
 import { whowearepicture } from '../../assets';
 import './style.css'
@@ -7,6 +7,20 @@ import axios from "axios"
 
 
 function Whoweare (props) {
+     
+    const [Whoweareinfos, setWhoweareInfos] = useState([])
+    
+    const WhoweareInfos = async () =>{
+        const res = await axios.get("http://localhost:1337/quem-somos")
+        const {data} = res;
+        console.log(data)
+        setWhoweareInfos(data);
+    }
+
+    useEffect (() =>{
+        setWhoweareInfos();
+    }, [])
+  
     return(
         <div className = "WhoweareSection">
                         
@@ -17,7 +31,7 @@ function Whoweare (props) {
                 <div className='contentwhoweare' style={{height: "250px"}}>
 
 
-                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
+                    <SectionComponent titlesection = "title" text = "texto" section = "invert">
                         <div style= {{ height: "270px"}} >
                                 <Card changeImage = "image" image = {"url"} />
                         </div>
