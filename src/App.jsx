@@ -1,5 +1,5 @@
 import React from 'react';
-import OurPartners from './Pages';
+import {OurPartners} from './Pages';
 import './style.css';
 import {Welcome} from "./Pages"
 import NavBar from './Pages/NavBar/navbar';

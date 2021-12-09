@@ -1,6 +1,6 @@
 import React from 'react';  
-import { greenstain } from '../../assets/index';
-import { kidspainting } from '../../assets/index';
+import  greenstain  from '../assets/greenstain.svg';
+import  kidspainting  from '../assets/kidspainting.svg';
 import './style.css';
 
 function Welcome(){

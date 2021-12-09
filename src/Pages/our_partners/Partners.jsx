@@ -2,8 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './style.css';
-import '../../Components/card/card';
-import Card from '../../Components/card/card';
+import { Card } from '../../Components';
 
 function OurPartners() {
     const [infos, setInfos] = useState([])
