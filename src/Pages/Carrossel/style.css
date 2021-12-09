@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.text {
+
+    display:flex;
+    flex-direction: column;
+}
+
+
+.title_carrosel {
+
+    width:349px;
+    height:41px;
+    font-size:30px;
+    font-family: 'Varela Round';
+    color:black;
+    text-align: start;
+    padding-bottom: 45px;
+}
+
+.description_carrossel {
+
+    text-align: start;
+    width:349px;
+    font-size: 20px;
+    font-family: 'Varela Round';
+    height:304px;
+}
+
+.container {
+
+    display:flex;
+    flex-direction: row;
+}
+
+.cards {
+
+    width: 426px;
+    height: 450px;
+    margin:0px;
+    position: relative;
+}
+
+.maincard {
+
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 140px;
+
+}
+
+.container {
+
+    margin-bottom: 50px;
+}
+
+.slick-dots {
+
+    top: 600px;
+    left:40px;
+}

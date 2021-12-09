@@ -17,12 +17,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 function SampleNextArrow(props) {
 
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
 
     return (
         <div
           className={className}
-          style={{ ...style,  width:"29px", height: "30px", position: "absolute" }}
           onClick={onClick}
         >
           <img src = { nextArrow }></img>
@@ -32,12 +31,11 @@ function SampleNextArrow(props) {
 
 function SamplePrevArrow(props) {
 
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
 
     return (
         <div
           className={className}
-          style={{ ...style,  width:"29px", height: "30px", position: "absolute" }}
           onClick={onClick}
         >
           <img src = { prevArrow }></img>
@@ -46,6 +44,16 @@ function SamplePrevArrow(props) {
 }
 
 function Carrossel () {
+
+    const [nav1, setNav1] = useState(null)
+    const [nav2, setNav2] = useState(null)
+    let slider1 = []
+    let slider2 = []
+
+    React.useEffect(() => {
+        setNav1(slider1)
+        setNav2(slider2)
+    }, [slider1, slider2])
 
     const [CarrosselInfo, setCarrosselInfo] = useState([])
     console.log(CarrosselInfo)
@@ -61,38 +69,71 @@ function Carrossel () {
         loadCarrosselInfo();
     }, [])
 
-    const settings = {
+    const settingsCard = {
         focusOnSelect: true,
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: <SamplePrevArrow />,
-        nextArrow: <SampleNextArrow />
+        nextArrow: <SampleNextArrow />,
+        centerMode:true,
+        centerPadding: '60px',
       };
 
-      return (
+      const settingsText = {
 
-        <div className='content'>
-            <h2 className='fixed_title'>O que fazemos</h2>
-            <div>
-                <Slider {...settings}>
-                    {CarrosselInfo?.map(({ title , description , image}) => (
-                            <div>
-                            <SectionComponent title={title} text={description} section='invert'>
-                                <div style={{width:"426px", height: "450px"}}>
-                                    <Card image = {image.url} changeImage='image'></Card>
-                                </div>
-                            </SectionComponent>
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
+      }
+
+      return (
+        <>
+        <div className='container' style={{width:'100%',height:'100%'}}>
+            <div  className='maincard' style={{width:'980px',height:'450px',marginTop:'0',justifyContent:'space-between'}}>
+                <Slider {...settingsCard} className='cardSlider'
+                 asNavFor={nav1}
+                 ref={slider => (slider2 = slider)}
+                 style={{width:'426px',
+                        height:'100%'}}
+                >
+                    {CarrosselInfo?.map(({image}) => (
+                        <div className='cards' style={{width:'426px',height:'450px'}}>
+                                {image?.map(({url}) => (
+                                    <div style={{width:'426px',height:'450px'}}>
+                                        <Card image={url} changeImage='image'></Card>
+                                    </div>
+                                ))}
                         </div>
-                        ))
-                    }
+                        ))}
                  </Slider>
+                 <div style={{width:'349px'}}>
+                 <Slider {...settingsText}
+                   asNavFor={nav2}
+                   ref={slider => (slider1 = slider)}
+                 >
+                    {CarrosselInfo?.map(({title,description}) => (
+                        <>
+                        <div className='texts' style={{width:'349px'}}>
+                        <h1 className='title_carrosel'>{title}</h1>
+                        <p className='description_carrossel'>{description}</p>
+                        </div>
+                        </>
+                    ))}
+
+                 </Slider>
+                 </div>
             </div>
 
 
         </div>
+        </>
       )
 
 }
