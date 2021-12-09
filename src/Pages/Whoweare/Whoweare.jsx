@@ -2,6 +2,9 @@ import React from 'react';
 import {Card, SectionComponent} from '../../Components'
 import { whowearepicture } from '../../assets';
 import './style.css'
+import axios from "axios"
+
+
 
 function Whoweare (props) {
     return(
