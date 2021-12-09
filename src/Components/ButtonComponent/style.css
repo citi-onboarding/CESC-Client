@@ -6,10 +6,11 @@
     padding: 3px;
     border: none;
     cursor: pointer;
-    font-family: Valera Round;
+    font-family: 'Varela Round';
     font-size: 20px;
     background-color: #FFFFFF;
     color: #0167B1;
+    font-weight: 600;
 }
 p{
     margin: 0px;
@@ -23,7 +24,7 @@ p{
     border-color: black;
     border-radius: 6px;
     border-width: 5px;
-    font-family: Valera Round;
+    font-family: 'Varela Round';
     font-size: 36px;
     letter-spacing: 0.03em;
 }

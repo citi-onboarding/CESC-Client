@@ -1,3 +1,2 @@
-import OurPartners from "./our_partners";
-
-export default OurPartners;
+export { default as NavBar } from './NavBar';
+export { default as OurPartners } from './OurPartners';
