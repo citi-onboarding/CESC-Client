@@ -1,15 +1,21 @@
 import React from 'react';
-import { Logo } from '../src/assets'
+import OurPartners from './Pages';
 import './style.css';
-import {Card} from "./Components"
 import {Welcome} from "./Pages"
+import NavBar from './Pages/NavBar/navbar';
+
 
 const App = () => {
   return (
     <div className="App">
-      <Welcome></Welcome>
+      <NavBar/>
+      <Welcome/>
+      <OurPartners />
     </div>
-)
-  }
+  )
+ }
+
+      
+
 
 export default App;
