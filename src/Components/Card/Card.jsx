@@ -7,7 +7,7 @@ function Card (props) {
             
             <img className= {`image${props.changeImage}`}src={props.image}/>
            
-            <div className = {`none${props.changeText}`}>
+            <div className = {`card-text${props.changeText}`}>
                 <h3 className="title"> {props.title} </h3>
                 <p className="description"> {props.description} </p>
 
