@@ -1,3 +1,4 @@
+export { default as Whoweare } from './Whoweare';
 
 export { default as Welcome} from './Welcome'
 export { default as NavBar } from './NavBar';
