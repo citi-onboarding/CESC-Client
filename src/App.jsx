@@ -1,4 +1,6 @@
 import React from 'react';
+import FoterComponent from './Pages/footer';
+import './style.css'
 import {OurPartners} from './Pages';
 import './style.css';
 import {Welcome} from "./Pages"
@@ -10,11 +12,11 @@ const App = () => {
   return (
    
     <div className="App">
-
       <NavBar/>
       <Welcome/>
       <Whoweare/>
       <OurPartners />
+      <FoterComponent/>
     </div>
 
 
