@@ -1,4 +1,4 @@
-import {  ButtonComponent } from '../../Components'
+import { ButtonComponent } from '../../Components'
 import  navbarpicture  from '../assets/navbarpicture.svg';
 import './style.css'
 
