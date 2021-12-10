@@ -11,7 +11,7 @@ function SectionComponent(props) {
 
             <div className='content'>
 
-                <h2 className='title'>{props.title}</h2>
+                <h2 className='titlesection'>{props.titlesection}</h2>
                 <p className='text'>{props.text}</p>
             </div>
 
