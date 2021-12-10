@@ -8,7 +8,7 @@ function OurPartners() {
     const [infos, setInfos] = useState([])
 
     const getInfos = async () => {
-        const res = await axios.get('http://localhost:1337/parceiros')
+        const res = await axios.get('https://cesc-server.herokuapp.com/parceiros')
         const {data} = res
         setInfos(data)
         console.log(data)

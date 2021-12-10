@@ -67,7 +67,7 @@ function Carrossel () {
     console.log(CarrosselInfo)
     
     async function loadCarrosselInfo() {
-        const res = await axios.get('http://localhost:1337/carrossels')
+        const res = await axios.get('https://cesc-server.herokuapp.com/carrossels')
         const { data } = res;
         console.log(data)
         setCarrosselInfo(data);

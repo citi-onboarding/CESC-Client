@@ -13,7 +13,7 @@ function Whoweare (props) {
     console.log(Whoweareinfos)
 
     async function loadWhoweareInfos () {
-        const res = await axios.get("http://localhost:1337/quem-somos")
+        const res = await axios.get("https://cesc-server.herokuapp.com/quem-somos")
         const {data} = res;
         console.log(data)
         setWhoweareInfos(data);
