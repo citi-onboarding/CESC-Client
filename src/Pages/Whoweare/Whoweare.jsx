@@ -20,37 +20,49 @@ function Whoweare (props) {
     }
 
     useEffect (() =>{
-        setWhoweareInfos();
+        loadWhoweareInfos();
     }, [])
   
     return(
         <div className = "WhoweareSection">
                         
             <div className = "whoweare">
-                <div className='titlewhoweare'>
-                    <h1>Quem Somos</h1>  
-                </div>
-                <div className='contentwhoweare' style={{height: "250px"}}>
+                
+                <p className="title-we">Quem Somos</p>  
+                
+              
+                <div className='contentwhoweare'>
 
-                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
-                        <div style= {{ height: "270px"}} >
-                                <Card changeImage = "image" image = {"url"} />
-                        </div>
+              
+
+                    <SectionComponent 
+                    titlesection = {Whoweareinfos[0]?.title} 
+                    text = {Whoweareinfos[0]?.description} 
+                    section = "invert">
+                        {Whoweareinfos[0]?.image?.map(({url}) =>(
+                            <div className="card-we">
+                                <Card changeImage = "image" image = {url} changeText="" />
+                            </div>
+                        ))}     
                     </SectionComponent>
-                    <SectionComponent titlesection = "titulo" text = "texto" section = "SectionDefault">
-                        <div style= {{ height: "270px"}} >
-                                <Card changeImage = "image" image = {"url"} />
-                        </div>
+                    <SectionComponent titlesection = {Whoweareinfos[1]?.title} text = {Whoweareinfos[1]?.description}  section = "SectionDefault">
+                        {Whoweareinfos[1]?.image?.map(({url}) =>(
+                            <div className="card-we">
+                                <Card changeImage = "image" image = {url} changeText="" />
+                            </div>
+                        ))}  
                     </SectionComponent>  
-                    <SectionComponent titlesection = "titulo" text = "texto" section = "invert">
-                        <div style= {{ height: "270px"}} >
-                                <Card changeImage = "image" image = {"url"} />
-                        </div>
+                    <SectionComponent titlesection = {Whoweareinfos[2]?.title} text = {Whoweareinfos[2]?.description}  section = "invert">
+                        {Whoweareinfos[2]?.image?.map(({url}) =>(
+                            <div className="card-we">
+                                <Card changeImage = "image" image = {url} changeText="" />
+                            </div>
+                        ))}  
                     </SectionComponent>                      
                    
-                    {/* <div className = "imagewhoweare">
+                    <div className = "imagewhoweare">
                         <img className='imgwhoweare' src = {whowearepicture}></img>
-                    </div> */}           
+                    </div>          
                 </div>
                     
                 </div>
