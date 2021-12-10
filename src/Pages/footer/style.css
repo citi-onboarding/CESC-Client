@@ -10,7 +10,7 @@ footer {
     bottom: 0px;
 }
 
-p {
+.footer-text {
     margin: 0px;
     font-family: 'Valera Round' sans-serif;
     font-size: 24px;

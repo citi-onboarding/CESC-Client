@@ -12,7 +12,7 @@ function FooterComponent() {
                                     <img src='../../assets/place2.svg' alt="" /> 
                                 </div>
                                 <div className='text_endereco' id='text'>
-                                        <p>Endereço: Rua Caripós, 372 -Coqueiral <br />
+                                        <p className="footer-text">Endereço: Rua Caripós, 372 -Coqueiral <br />
                                         CEP: 50791120</p>
                                 </div> 
                             </div>
@@ -23,7 +23,7 @@ function FooterComponent() {
                                     <img src="../../assets/heart1.svg" alt="" />
                                 </div>
                                 <div className='text_arrecad' id='text'>
-                                    <p>Recebemos doações de cestas básicas de alimentos e produtos de limpeza. <br />
+                                    <p className="footer-text" >Recebemos doações de cestas básicas de alimentos e produtos de limpeza. <br />
                                         Pix ou transferência bancária <br />
                                         Pix Celular - 81 9 88385780</p>
                                 </div>   
@@ -37,7 +37,7 @@ function FooterComponent() {
                                         <img src='../../assets/instagram1.svg' alt="" /> 
                                     </div>
                                     <div className='text_instagram' id='text'>
-                                        <p>@cesc_coqueiral</p>
+                                        <p className="footer-text">@cesc_coqueiral</p>
                                     </div>
                                 </div>
 
@@ -46,13 +46,13 @@ function FooterComponent() {
                                         <img src='../../assets/whatsapp1.svg' alt="" /> 
                                     </div>
                                     <div className='text_whatsapp' id='text'>
-                                        <p>(81) 9724-4808</p>
+                                        <p className="footer-text">(81) 9724-4808</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='citi'>
-                                <p id='text'>
+                                <p id='text' className="footer-text">
                                     Made with
                                     {' '}
                                     <strong>&lt; &#x0002F; &gt;</strong>
