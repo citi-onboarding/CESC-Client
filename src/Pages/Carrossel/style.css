@@ -7,8 +7,8 @@
     text-align: start;
     font-family: 'Varela Round';
     padding-top:250px;
-    left: 120px;
     font-weight: 600;
+
 }
 
 
@@ -46,7 +46,7 @@
     flex-direction: row;
 }
 
-.cards {
+.cards_carrossel {
 
     width: 426px;
     height: 450px;
@@ -73,6 +73,13 @@
 
     width: 349px;
 }
+
+
+
+
+
+
+
 
 
 

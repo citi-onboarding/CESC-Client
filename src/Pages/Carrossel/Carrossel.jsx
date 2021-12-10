@@ -87,7 +87,7 @@ function Carrossel () {
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow />,
         centerMode:true,
-        centerPadding: '164px',
+        centerPadding:'150px',
         customPaging: i => (
           <div
             style={{
@@ -114,7 +114,7 @@ function Carrossel () {
 
       return (
         <>
-        <div className='everything'>
+        <div className='everything' style={{width:'1000px'}}>
           <p className='fixed_title'>O que fazemos</p>
       
           <div className='container1' style={{position:'relative',width:'700px'}}>
@@ -124,15 +124,16 @@ function Carrossel () {
                   <Slider {...settingsCard} className='cardSlider'
                   asNavFor={nav1}
                   ref={slider => (slider2 = slider)}
-                  style={{width:'426px',
+                  style={{width:'754px',
                           height:'100%',
-                          paddingTop:'20px'
+                          paddingTop:'20px',
+                          margin:'10px'
                           }}
                     >
                       {CarrosselInfo?.map(({image}) => (
-                          <div className='cards' style={{height:'450px'}}>
+                          <div className='cards_carrossel' style={{height:'450px'}}>
                                   {image?.map(({url}) => (
-                                      <div style={{height:'450px'}}>
+                                      <div style={{height:'450px',width:'426px'}}>
                                           <Card image={url} changeImage='image' changeText=''></Card>
                                       </div>
                                   ))}
