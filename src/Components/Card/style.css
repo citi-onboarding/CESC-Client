@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+
+
 .card {
     width: 100%;
     height: 100%;
@@ -19,6 +21,12 @@
     height: 85%;
     justify-content: flex-start;
 }
+
+.none {
+    display:none;
+
+}
+
 p {
     margin: 0%;
 }

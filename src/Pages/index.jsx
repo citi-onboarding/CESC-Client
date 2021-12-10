@@ -1,3 +1,4 @@
+export {default as Carrossel} from './Carrossel'
 export {default as FooterComponent} from "./footer";
 export { default as Whoweare } from './Whoweare';
 export { default as Welcome} from './Welcome'
