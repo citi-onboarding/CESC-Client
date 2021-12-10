@@ -29,7 +29,7 @@ function SampleNextArrow(props) {
         <div
           className={className}
           onClick={onClick}
-          style = {{width:'20px'}}
+          style = {{width:'20px',left:'760px'}}
         >
           <img src = { nextArrow }></img>
         </div>
@@ -93,6 +93,8 @@ function Carrossel () {
             style={{
               width: "15px",
               height:'15px',
+              position:'absolute',
+              left:'-100px'
             }}
           >
             <img src={carouselDots}/> 
@@ -127,7 +129,8 @@ function Carrossel () {
                   style={{width:'754px',
                           height:'100%',
                           paddingTop:'20px',
-                          margin:'10px'
+                          margin:'10px',
+                          marginRight:'50px'
                           }}
                     >
                       {CarrosselInfo?.map(({image}) => (
@@ -148,8 +151,8 @@ function Carrossel () {
                         {CarrosselInfo?.map(({title,description}) => (
                             <>
                             <div className='texts_carrossel'>
-                              <p>{title}</p>
-                              <p>{description}</p>
+                              <p className='title_carrossel2'>{title}</p>
+                              <p className-='text_carrossel2' style={{fontFamily:'Varela Round',height:'400px',fontSize:'20px'}}>{description}</p>
                             </div>
                             
                             </>
@@ -159,12 +162,12 @@ function Carrossel () {
                   </div>
               </div>
 
-              <img src={ChildrenStain} style={{width:'418px',position:'absolute',left:'500px',top:'350px'}}/>
-              <img src={Childrenone} style={{position:'absolute',width:'161px',left:'470px',top:'470px'}}/>
-              <img src={Childrentwo} style={{position:'absolute',width:'120px',left:'600px',top:'350px'}}/>
-              <img src={Childrenthree} style={{position:'absolute',width:'125px',left:'710px',top:'350px'}}/>
-              <img src={Childrenfour} style={{position:'absolute',width:'99px',left:'650px',top:'510px'}}/>
-              <img src={Childrenfive} style={{position:'absolute',width:'101px',left:'760px',top:'480px'}}/>
+              <img src={ChildrenStain} style={{width:'418px',position:'absolute',left:'550px',top:'350px'}}/>
+              <img src={Childrenone} style={{position:'absolute',width:'161px',left:'520px',top:'470px'}}/>
+              <img src={Childrentwo} style={{position:'absolute',width:'120px',left:'650px',top:'350px'}}/>
+              <img src={Childrenthree} style={{position:'absolute',width:'125px',left:'760px',top:'350px'}}/>
+              <img src={Childrenfour} style={{position:'absolute',width:'99px',left:'700px',top:'510px'}}/>
+              <img src={Childrenfive} style={{position:'absolute',width:'101px',left:'810px',top:'480px'}}/>
 
           </div>
         </div>
