@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+footer {
+    display: grid;
+    grid-template-rows: 260px 180px;
+    width: 100%;
+    height: 400px;
+    bottom: 0px;
+}
+
+.footer-text {
+    margin: 0px;
+    font-family: 'Valera Round' sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.vector{  
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+    justify-content: space-around;
+    background-image: url('../../assets/vector.svg');
+    width: 100%;
+    height: 260px;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    align-items: baseline;
+    justify-content: end;
+    width: 440px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.img_endereco{
+    background-image: url('../../assets/place2.svg');
+    width: 60px;
+    height: 60px;
+}
+
+.text_endereco{
+    width: 340px;
+    height: 80px;
+    margin-top: 0px;
+    align-items: baseline;
+}
+
+.arrecad{
+    display: grid;
+    grid-template-columns: 60px 360px;
+    justify-content: space-around;
+    width: 440px;
+    height: 120px;
+    align-items: initial;
+    margin-bottom: 50px;
+}
+
+.text_arrecad{
+    width: 360px;
+    height: 200px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.img_arrecad{
+    background-image: url('../../assets/heart1.svg');
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 50px;
+}
+
+
+.rectangle{
+    background-image: url('../../assets/rectangle.svg');
+    display: grid;
+    grid-template-columns: 500px 270px;
+    justify-content: space-around;
+    width: 100%;
+    height: 140px;
+}
+
+.instagram_whatsapp{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: space-around;
+    height: 100px;
+    align-items: flex-start;
+}
+
+.citi{
+    height: 40px;  
+}
+
+.instagram{
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 90px;
+}
+
+.img_instagram{
+    background-image: url('../../assets/instagram1.svg');
+    width: 60px;
+    height: 60px;
+}
+
+.text_instagram{
+    width: 150px;
+    height: 40px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.whatsapp{
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    width: 200px;
+    height: 90px;
+    margin-top: 0px;
+}
+
+.img_whatsapp{
+    background-image: url('../../assets/whatsapp1.svg');
+    width: 60px;
+    height: 60px;
+}
+
+.text_whatsapp{
+    width: 140px;
+    height: 80px;
+    margin-top: 0px;
+}
+
+.citi{
+    height: 40px;
+    align-items: flex-end;
+    align-items: bottom; 
+}
