@@ -3,12 +3,14 @@
 .fixed_title {
 
     color:#0167B1;
-    padding-top: 80px;
     font-size: 45px;
-    width:730px;
     text-align: start;
     font-family: 'Varela Round';
+    padding-top:250px;
+    left: 120px;
+    font-weight: 600;
 }
+
 
 .text {
 
@@ -26,6 +28,7 @@
     color:black;
     text-align: start;
     padding-bottom: 45px;
+
 }
 
 .description_carrossel {
@@ -37,7 +40,7 @@
     height:304px;
 }
 
-.container {
+.container1 {
 
     display:flex;
     flex-direction: row;
@@ -55,14 +58,10 @@
 
     display:flex;
     flex-direction: row;
-    margin-bottom: 140px;
+    margin-bottom: 170px;
 
 }
 
-.container {
-
-    margin-bottom: 50px;
-}
 
 .slick-dots {
 
@@ -70,11 +69,13 @@
     left:73px;
 }
 
+.texts_carrossel {
 
-.card img {
-
-    width:426px;
+    width: 349px;
 }
+
+
+
 
 
 

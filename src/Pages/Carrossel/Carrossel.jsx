@@ -4,15 +4,15 @@ import axios from 'axios';
 
 import './style.css'
 
-import { nextArrow } from '../../assets'
-import { prevArrow } from '../../assets'
-import { carouselDots } from "../../assets";
-import { Childrenone } from "../../assets";
-import { Childrentwo } from "../../assets";
-import { Childrenthree } from "../../assets";
-import { Childrenfour } from "../../assets";
-import { Childrenfive } from "../../assets";
-import { ChildrenStain } from "../../assets";
+import nextArrow  from '../assets/nextArrow.svg'
+import prevArrow from '../assets/prevArrow.svg'
+import carouselDots from "../assets/carouselDot.svg";
+import Childrenone from "../assets/Childreone.svg";
+import Childrentwo from "../assets/Childrentwo.svg";
+import Childrenthree from "../assets/Childrenthree.svg";
+import Childrenfour from "../assets/Childrenfour.svg";
+import Childrenfive from "../assets/Childrenfive.svg";
+import ChildrenStain from "../assets/ChildrenStain.svg";
 
 import { SectionComponent } from "../../Components";
 import { Card } from "../../Components";
@@ -29,7 +29,7 @@ function SampleNextArrow(props) {
         <div
           className={className}
           onClick={onClick}
-          style = {{width:'100px',left:'750px',top:'300px',}}
+          style = {{width:'20px'}}
         >
           <img src = { nextArrow }></img>
         </div>
@@ -44,7 +44,7 @@ function SamplePrevArrow(props) {
         <div
           className={className}
           onClick={onClick}
-          style={{width:'100px',zIndex:'1',top:'300px'}}
+          style={{width:'20px'}}
         >
           <img src = { prevArrow }></img>
         </div>
@@ -91,10 +91,8 @@ function Carrossel () {
         customPaging: i => (
           <div
             style={{
-              width: "35px",
-              height:'35px',
-              alignItems:'center',
-              paddingLeft:'92px'
+              width: "15px",
+              height:'15px',
             }}
           >
             <img src={carouselDots}/> 
@@ -116,54 +114,58 @@ function Carrossel () {
 
       return (
         <>
-
-        <h1 className='fixed_title'>O que fazemos</h1>
+        <div className='everything'>
+          <p className='fixed_title'>O que fazemos</p>
       
-        <div className='container' style={{width:'100%',height:'100%',position:'relative'}}>
+          <div className='container1' style={{position:'relative',width:'700px'}}>
 
 
-            <div  className='maincard' style={{width:'1200px',height:'450px',marginTop:'0',justifyContent:'space-between'}}>
-                <Slider {...settingsCard} className='cardSlider'
-                 asNavFor={nav1}
-                 ref={slider => (slider2 = slider)}
-                 style={{width:'426px',
-                        height:'100%'}}
-                >
-                    {CarrosselInfo?.map(({image}) => (
-                        <div className='cards' style={{width:'426px',height:'450px'}}>
-                                {image?.map(({url}) => (
-                                    <div style={{width:'426px',height:'450px'}}>
-                                        <Card image={url} changeImage='image' changeText=''></Card>
-                                    </div>
-                                ))}
-                        </div>
+              <div  className='maincard' style={{height:'450px'}}>
+                  <Slider {...settingsCard} className='cardSlider'
+                  asNavFor={nav1}
+                  ref={slider => (slider2 = slider)}
+                  style={{width:'426px',
+                          height:'100%',
+                          paddingTop:'20px'
+                          }}
+                    >
+                      {CarrosselInfo?.map(({image}) => (
+                          <div className='cards' style={{height:'450px'}}>
+                                  {image?.map(({url}) => (
+                                      <div style={{height:'450px'}}>
+                                          <Card image={url} changeImage='image' changeText=''></Card>
+                                      </div>
+                                  ))}
+                          </div>
+                          ))}
+                  </Slider>
+                  <div className='carrossel2'>
+                    <Slider {...settingsText}
+                      asNavFor={nav2}
+                      ref={slider => (slider1 = slider)}
+                    >
+                        {CarrosselInfo?.map(({title,description}) => (
+                            <>
+                            <div className='texts_carrossel'>
+                              <p>{title}</p>
+                              <p>{description}</p>
+                            </div>
+                            
+                            </>
                         ))}
-                 </Slider>
-                 <div style={{width:'349px'}}>
-                 <Slider {...settingsText}
-                   asNavFor={nav2}
-                   ref={slider => (slider1 = slider)}
-                 >
-                    {CarrosselInfo?.map(({title,description}) => (
-                        <>
-                        <div className='texts' style={{width:'349px'}}>
-                        <h1 className='title_carrosel'>{title}</h1>
-                        <p className='description_carrossel'>{description}</p>
-                        </div>
-                        </>
-                    ))}
 
-                 </Slider>
-                 </div>
-            </div>
+                    </Slider>
+                  </div>
+              </div>
 
-            <img src={ChildrenStain} style={{width:'418px',position:'absolute',left:'1100px',top:'350px'}}/>
-            <img src={Childrenone} style={{position:'absolute',width:'161px',left:'1100px',top:'500px'}}/>
-            <img src={Childrentwo} style={{position:'absolute',width:'120px',left:'1200px',top:'350px'}}/>
-            <img src={Childrenthree} style={{position:'absolute',width:'125px',left:'1320px',top:'350px'}}/>
-            <img src={Childrenfour} style={{position:'absolute',width:'99px',left:'1270px',top:'520px'}}/>
-            <img src={Childrenfive} style={{position:'absolute',width:'101px',left:'1400px',top:'480px'}}/>
+              <img src={ChildrenStain} style={{width:'418px',position:'absolute',left:'500px',top:'350px'}}/>
+              <img src={Childrenone} style={{position:'absolute',width:'161px',left:'470px',top:'470px'}}/>
+              <img src={Childrentwo} style={{position:'absolute',width:'120px',left:'600px',top:'350px'}}/>
+              <img src={Childrenthree} style={{position:'absolute',width:'125px',left:'710px',top:'350px'}}/>
+              <img src={Childrenfour} style={{position:'absolute',width:'99px',left:'650px',top:'510px'}}/>
+              <img src={Childrenfive} style={{position:'absolute',width:'101px',left:'760px',top:'480px'}}/>
 
+          </div>
         </div>
         </>
       )
